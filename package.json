@@ -1,0 +1,14 @@
+{
+  "name": "dsh-owasp-security",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness skill bundle: security review and secure coding with OWASP Top 10:2025, ASVS 5.0, the OWASP LLM Top 10 (2026), and the OWASP Agentic Top 10 (2026).",
+  "type": "module",
+  "main": "index.js",
+  "files": ["index.js", "cordis.patch.yml", "skills"],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "keywords": ["deepseek-harness", "dsh", "cordis", "security", "owasp", "asvs", "code-review", "appsec", "llm-security", "agent-security"],
+  "license": "MIT",
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
