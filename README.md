@@ -13,17 +13,17 @@ The skill content (`skills/owasp-security/`) is unchanged; only the packaging di
 Install the bundle into a profile with `dsh plugin`:
 
 ```sh
-dsh plugin --profile demo add ./dsh-owasp-security
+dsh plugin --profile web add ./dsh-owasp-security
 ```
 
 Check that the layer is present, then boot:
 
 ```sh
-dsh --profile demo --dump-config   # shows a "# == dsh-owasp-security" layer
-dsh --profile demo
+dsh --profile web --dump-config   # shows a "# == dsh-owasp-security" layer
+dsh --profile web
 ```
 
-Remove it with `dsh plugin --profile demo remove dsh-owasp-security`.
+Remove it with `dsh plugin --profile web remove dsh-owasp-security`.
 
 From a source checkout of the harness, run the same commands as `pnpm dsh ...`.
 
